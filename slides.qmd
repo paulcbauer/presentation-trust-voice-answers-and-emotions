@@ -10,7 +10,7 @@ format:
     theme: [white, custom.css]
     embed-resources: true
     slide-number: true
-    include-after-body: 
+    include-after-body:
       - text: |
           <script type="text/javascript">
           Reveal.addEventListener('slidechanged', (event) => {
@@ -19,11 +19,12 @@ format:
           });
           </script>
     preview-links: auto
-    #logo: images/quarto.png
-editor: 
-  markdown: 
-    wrap: 72
+    sc-sb-title: true
+    header: Camille Landesvatter - Analyzing Audio Survey Responses
+filters:
+  - reveal-header
 ---
+
 
 ## Hello! Who is your speaker today?
 
@@ -49,17 +50,17 @@ editor:
 
 <font size = "6">
 
-- [Audio Survey Responses]{style="color:blue"}: What insights can we gain by leveraging spoken responses in surveys to understand respondents' views more deeply?
+- 1. [Audio Data in the Social Sciences and in Surveys]{style="color:blue"}: What insights can we gain by leveraging spoken responses in surveys to understand respondents' views more deeply?
 
-- [Emotion Analysis]{style="color:blue"}: What insights can we gain through automated emotion analysis of audio responses, and how do emotions influence political trust dynamics?
+- 2. [Emotion Analysis]{style="color:blue"}: What insights can we gain through automated emotion analysis of audio responses, and how do emotions influence political trust ratings?
 
-- [Political Trust]{style="color:blue"}: How can we measure political trust? And how can we use Audio Data and Emotion Analysis to support this task?
+- 3. [Affect and Emotions in Political Trust]{style="color:blue"}: How can we measure political trust? And how can we use Audio Data and Emotion Analysis to support this task?
 
 </font size>
 
 ------------------------------------------------------------------------
 
-## <font size = "14"> Audio Data in the Social Sciences and in Surveys </font size> {.center}
+## <font size = "14">Audio Data in the Social Sciences and in Surveys</font size> {.center}
 
 
 
@@ -67,6 +68,10 @@ editor:
 
 
 ## What is Audio Data?
+
+::: header
+Audio Data in the Social Sciences and in Surveys
+:::
 
 <font size = "6">
 
@@ -93,6 +98,10 @@ editor:
 
 ## What are characteristics of Audio Data?
 
+::: header
+Audio Data in the Social Sciences and in Surveys
+:::
+
 <font size = "6">
 
 - Audio Data contains rich information including paralinguistic elements
@@ -111,6 +120,10 @@ Cognitive Processing Modes:
 ------------------------------------------------------------------------
 
 ## Audio Answers in Surveys
+
+::: header
+Audio Data in the Social Sciences and in Surveys
+:::
 
 <font size = "6">
 
@@ -138,6 +151,10 @@ Explanations:
 
 ## Methods for the Analysis of Audio Data
 
+::: header
+Audio Data in the Social Sciences and in Surveys
+:::
+
 <font size = "6">
 
 - Increasing number of methods to analyze audio data
@@ -163,7 +180,15 @@ Explanations:
 
 ------------------------------------------------------------------------
 
+## <font size = "14">Emotion Analysis</font size> {.center}
+
+------------------------------------------------------------------------
+
 ## Speech Emotion Recognition
+
+::: header
+Emotion Analysis
+:::
 
 <font size = "6">
 
@@ -179,6 +204,10 @@ Explanations:
 ------------------------------------------------------------------------
 
 ## Emotion Recognition = Sentiment Analysis?
+
+::: header
+Emotion Analysis
+:::
 
 <font size = "6">
 
@@ -207,6 +236,10 @@ Explanations:
 
 ## Background
 
+::: header
+Affect and Emotions in Political Trust
+:::
+
 <font size = "6">
 
 - Conventional notion of political trust where trust judgments are made upon the basis of risk calculations and rational choice-making processes
@@ -223,28 +256,26 @@ conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
 
 ------------------------------------------------------------------------
 
-## Research Question
+## Research Questions and Motivation
 
-<font size = "6">
-
-<blockquote>[Are individual trust judgments in surveys driven by affective components?]{style="color:black"}</blockquote>
-
-::: fragment
-<blockquote>[What thought processes and associations come to respondents' minds when prompted to discuss 'politics' and their level of trust?]{style="color:black"}</blockquote>
+::: header
+Affect and Emotions in Political Trust
 :::
 
-</font size>
-
-------------------------------------------------------------------------
-
-## Motivation
-
 <font size = "6">
+
+<blockquote>[What thought processes and associations come to respondents' minds when prompted to discuss 'politics' and their level of trust?]{style="color:black"}</blockquote>
+
+::: fragment
+<blockquote>[Are individual trust judgments in surveys driven by affective  components?]{style="color:black"}</blockquote>
+:::
+
+::: fragment
+Motivation:
 
 1. Research on determinants of political trust generates knowledge on [how trust evolves and changes over time]{style="color:blue"}.
 
-::: fragment
-2. The influence of emotions on political trust is crucial in order to[understand how the media such as television uses emotions as an instrument for influencing people]{style="color:blue"}, for example by showing politicians’s emotional appearances in the media (Gabriel et al. 2023)
+2. The influence of emotions on political trust is crucial in order to [understand how the media such as television uses emotions as an instrument for influencing people]{style="color:blue"}, for example by showing politicians’s emotional appearances in the media (Gabriel et al. 2023)
 :::
 
 </font size>
@@ -254,6 +285,9 @@ conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
 
 ## Questionnaire Design
 
+::: header
+Affect and Emotions in Political Trust
+:::
 
 <table style="width: 899px;">
 <tbody>
@@ -275,6 +309,10 @@ conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
 
 ## Data
 
+::: header
+Affect and Emotions in Political Trust
+:::
+
 <font size = "6">
 
 - Self-administered web survey, September 6 to October 27, 2023
@@ -290,6 +328,10 @@ conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
 
 ## Methods
 
+::: header
+Affect and Emotions in Political Trust
+:::
+
 <div style="text-align: center;">
 
 <figure>
@@ -303,7 +345,11 @@ conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
 
 ------------------------------------------------------------------------
 
-## Results
+## Results: Sentiment
+
+::: header
+Affect and Emotions in Political Trust
+:::
 
 <font size = "6">
 
@@ -323,7 +369,11 @@ conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
 
 ------------------------------------------------------------------------
 
-## Results
+## Results: Sentiment
+
+::: header
+Affect and Emotions in Political Trust
+:::
 
 <font size = "6">
 
@@ -343,7 +393,11 @@ conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
 
 ------------------------------------------------------------------------
 
-## Results
+## Results: Emotions
+
+::: header
+Affect and Emotions in Political Trust
+:::
 
 <font size = "6">
 
@@ -363,7 +417,11 @@ conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
 
 ------------------------------------------------------------------------
 
-## Results
+## Results: Emotions
+
+::: header
+Affect and Emotions in Political Trust
+:::
 
 <font size = "6">
 
@@ -387,6 +445,10 @@ conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
 ------------------------------------------------------------------------
 
 ## Discussion
+
+::: header
+Affect and Emotions in Political Trust
+:::
 
 <font size = "6">
 
@@ -416,6 +478,10 @@ Two follow-up questions:
 
 ## Outlook on future research agenda
 
+::: header
+Outlook
+:::
+
 <font size = "6">
 
 - Overall, audio data plays a crucial role for studying societies, as spoken language is one of humanity's most important means of communication, expression and information exchange in various fields (e.g., public speeches and debates, political talk shows and podcasts, press conferences).
@@ -438,6 +504,10 @@ Two follow-up questions:
 ------------------------------------------------------------------------
 
 ## Speech-to-Text algorithms
+
+::: header
+Outlook
+:::
 
 <font size = "6">
 
