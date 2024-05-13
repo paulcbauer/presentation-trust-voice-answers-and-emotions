@@ -20,7 +20,7 @@ format:
           </script>
     preview-links: auto
     sc-sb-title: true
-    header: Camille Landesvatter - Analyzing Audio Survey Responses
+    header: Camille Landesvatter — Analyzing Audio Survey Responses
 filters:
   - reveal-header
 ---
