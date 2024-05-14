@@ -194,9 +194,13 @@ Emotion Analysis
 
 - Speech Emotion Recognition (SER) is part of the field of Automated Emotion Recognition, further intersecting with disciplines such as Neurocomputing and Affective Computing 
 
+::: fragment
 - Why use Speech for Emotion Analysis? → Recognizing emotions from text is difficult because it is stripped of all paralinguistic and acoustic features
+:::
 
+::: fragment
 - Evolution of Models from traditional Machine Learning models (e.g., logistic regression) to deep learning based methods, e.g. SpeechBrain (Ravanelli et al. 2021)
+:::
 
 </font size>
 
@@ -244,12 +248,14 @@ Affect and Emotions in Political Trust
 
 - Conventional notion of political trust where trust judgments are made upon the basis of risk calculations and rational choice-making processes
 
+::: fragment
 - Recently challenged by the idea of an "affect-based" form of political trust (e.g., Theiss-Morse and Barton 2017)
 
 <blockquote>"A decision to trust a government organization may […] not always be
 conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
 
 - “Automatic Hot Cognition” (Lodge and Taber 2013)
+:::
 
 </font size>
 
@@ -377,7 +383,7 @@ Affect and Emotions in Political Trust
 
 <font size = "6">
 
-- Associations and thought processes with a positive sentiment positively influence trust scores, and vice versa → Associations with the question wording matter.
+- Associations and thought processes with a positive sentiment positively influence trust scores, and vice versa → Associations with the question wording and thought processes matter.
 
 ::: {style="text-align: center;"}
 <figure>
@@ -452,7 +458,7 @@ Affect and Emotions in Political Trust
 
 <font size = "6">
 
-- We see how people feel affects how much they report to have trust in politics.
+- We find that individual's associations, thought processes and feelings influence how much they report to have trust in politics.
 
 - But we find few respondents to use emotional language in their answers and there is no consistent effect of emotions on reported trust score.
 
@@ -461,7 +467,9 @@ Two follow-up questions:
 
 - Maybe a survey setting is a too formal setting top elicit emotions? 
 	- Could depend on circumstances, e.g. are others around?
+:::
 
+::: fragment
 - How does SpeechBrain classify? Can we generate a human benchmark?
 :::
 
