@@ -52,9 +52,10 @@ filters:
 
 - 1. [Audio Data in the Social Sciences and in Surveys]{style="color:blue"}: What insights can we gain by leveraging spoken responses in surveys to understand respondents' views more deeply?
 
-- 2. [Emotion Analysis]{style="color:blue"}: What insights can we gain through automated emotion analysis of audio responses, and how do emotions influence political trust ratings?
+- 2. [Emotion Analysis]{style="color:blue"}: What insights can we gain through automated emotion analysis of audio responses?
 
-- 3. [Affect and Emotions in Political Trust]{style="color:blue"}: How can we measure political trust? And how can we use Audio Data and Emotion Analysis to support this task?
+- 3. [Emotions in Political Trust]{style="color:blue"}: Can we use audio data and emotion analysis to measure political trust? Do emotions affect political trust
+judgments?
 
 </font size>
 
@@ -192,10 +193,10 @@ Emotion Analysis
 
 <font size = "6">
 
-- Speech Emotion Recognition (SER) is part of the field of Automated Emotion Recognition, further intersecting with disciplines such as Neurocomputing and Affective Computing 
+- Why use Speech for Emotion Analysis? → Recognizing emotions from text is difficult because it is stripped of all paralinguistic and acoustic features
 
 ::: fragment
-- Why use Speech for Emotion Analysis? → Recognizing emotions from text is difficult because it is stripped of all paralinguistic and acoustic features
+- Speech Emotion Recognition (SER) is part of the field of Automated Emotion Recognition, further intersecting with disciplines such as Neurocomputing and Affective Computing 
 :::
 
 ::: fragment
@@ -231,7 +232,7 @@ Emotion Analysis
 
 ------------------------------------------------------------------------
 
-## <font size = "14"> Research Project:<br>Affect and Emotions in Political Trust </font size> {background-image="paper3/dreamstudio-emotion-analysis.png" background-size="40%" background-opacity="0.2" .center}
+## <font size = "14"> Research Project:<br>Emotions in Political Trust </font size> {background-image="paper3/dreamstudio-emotion-analysis.png" background-size="40%" background-opacity="0.2" .center}
 
 	
 	
@@ -241,7 +242,7 @@ Emotion Analysis
 ## Background
 
 ::: header
-Affect and Emotions in Political Trust
+Emotions in Political Trust
 :::
 
 <font size = "6">
@@ -265,7 +266,7 @@ conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
 ## Research Questions and Motivation
 
 ::: header
-Affect and Emotions in Political Trust
+Emotions in Political Trust
 :::
 
 <font size = "6">
@@ -292,7 +293,7 @@ Motivation:
 ## Questionnaire Design
 
 ::: header
-Affect and Emotions in Political Trust
+Emotions in Political Trust
 :::
 
 <table style="width: 899px;">
@@ -316,7 +317,7 @@ Affect and Emotions in Political Trust
 ## Data
 
 ::: header
-Affect and Emotions in Political Trust
+Emotions in Political Trust
 :::
 
 <font size = "6">
@@ -335,7 +336,7 @@ Affect and Emotions in Political Trust
 ## Methods
 
 ::: header
-Affect and Emotions in Political Trust
+Emotions in Political Trust
 :::
 
 <div style="text-align: center;">
@@ -354,7 +355,7 @@ Affect and Emotions in Political Trust
 ## Results: Sentiment
 
 ::: header
-Affect and Emotions in Political Trust
+Emotions in Political Trust
 :::
 
 <font size = "6">
@@ -378,7 +379,7 @@ Affect and Emotions in Political Trust
 ## Results: Sentiment
 
 ::: header
-Affect and Emotions in Political Trust
+Emotions in Political Trust
 :::
 
 <font size = "6">
@@ -402,7 +403,7 @@ Affect and Emotions in Political Trust
 ## Results: Emotions
 
 ::: header
-Affect and Emotions in Political Trust
+Emotions in Political Trust
 :::
 
 <font size = "6">
@@ -426,7 +427,7 @@ Affect and Emotions in Political Trust
 ## Results: Emotions
 
 ::: header
-Affect and Emotions in Political Trust
+Emotions in Political Trust
 :::
 
 <font size = "6">
@@ -453,7 +454,7 @@ Affect and Emotions in Political Trust
 ## Discussion
 
 ::: header
-Affect and Emotions in Political Trust
+Emotions in Political Trust
 :::
 
 <font size = "6">
