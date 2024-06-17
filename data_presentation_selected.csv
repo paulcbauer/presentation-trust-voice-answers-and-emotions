@@ -1,0 +1,8 @@
+trust_in_government,transcription,speechbrain_classification,sentiment_BERT,sentiment_GPT
+0,Government exists only to perpetuate itself. It does so by promulgating rules and raising taxes in order to keep control of the populace.,['ang'],negative,negative
+1,It is very hard for the left and the right to come together to make decisions that affect our lives. That is why I only trust the government some of the time.,['ang'],negative,neutral
+3,Because we are the strongest in the world. And we have ever done things that people's America has like.,['hap'],positive,positive
+0,"The federal government, like all the other governments on this planet, is corrupt and it will never have your best interest in mind. Politicians are corrupt evil people.",['neu'],negative,negative
+3,"Again, Congress does what's best for the public. It's only fringe issues that make the news. Most of the stuff goes to them. Most people don't pay attention to it.",['neu'],neutral,positive
+1,"I don't have too much trust in the government these days. I think there's too much money involved in influencing politicians and laws. So I should have said never, but sometimes maybe.",['sad'],negative,negative
+3,"I think if you take the craziness and the partisan politics out of the entire thing, there's an awful lot of people that are good people that work in the different areas of federal government. I think they have the best interest at heart of most of the people in the country.",['sad'],positive,positive

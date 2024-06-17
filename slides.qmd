@@ -1,10 +1,13 @@
 ---
-title: "Analyzing Audio Survey Responses: Insights from a Research Project on Political Trust"
-subtitle: "Empirical Social Science Research Seminar Series<br>15 May 2024"
+title: "Affect and Emotions<br>in Political Trust"
+subtitle: '<h3>Vortragsreihe "Politik in Europa", 18 June 2024</h3><br><br>'
 author:
-  - name: Camille Landesvatter
+  - name: Dr. Camille Landesvatter
     affiliations:
       - name: University of Mannheim
+  - name: Dr. Paul C. Bauer
+    affiliations:
+      - name: University of Freiburg, LMU Munich
 format:
   revealjs: 
     theme: [white, custom.css]
@@ -20,52 +23,35 @@ format:
           </script>
     preview-links: auto
     sc-sb-title: true
-    header: Camille Landesvatter — Analyzing Audio Survey Responses
+    header: Affect and Emotions<br>in Political Trust
 filters:
   - reveal-header
 ---
 
 
-## Hello! Who is your speaker today?
+<!-- 30 Minuten presentation time-->
 
-<font size = "6">
-
-- 👋 Camille Landesvatter
-
-- 📍 Research Associate at the MZES, University of Mannheim
-
-- 🏫 Studied social sciences and sociology at the University of Stuttgart and Mannheim
-
-- 🎓 Started my PhD in Sociology in 2020 under the supervision of Florian Keusch and Paul Bauer (TrustME project)
-
-- 🏠 Moved to Berlin in 2021 and visited the WZB for a research stay 
-
-- Finished my PhD last month! 🎉
-
-</font size>
-
-------------------------------------------------------------------------
 
 ## Today's Agenda
 
 <font size = "6">
 
-- 1. [Audio Data in the Social Sciences and in Surveys]{style="color:blue"}: What insights can we gain by leveraging spoken responses in surveys to understand respondents' views more deeply?
+- 1. [**Audio Data in the Social Sciences and in Surveys**]{style="color:blue"}: What insights can we gain by leveraging spoken (audio) responses in surveys?
 
-- 2. [Emotion Analysis]{style="color:blue"}: What insights can we gain through automated emotion analysis of audio responses?
+- 2. [**Emotion Analysis**]{style="color:blue"}: What insights can we gain through automated emotion analysis of audio responses?
 
-- 3. [Emotions in Political Trust]{style="color:blue"}: Can we use audio data and emotion analysis to measure political trust? Do emotions affect political trust
-judgments?
+- 3. [**Paper**]{style="color:blue"}: Affect and Emotions in Political Trust
+
+
+
 
 </font size>
 
-------------------------------------------------------------------------
+
 
 ## <font size = "14">Audio Data in the Social Sciences and in Surveys</font size> {.center}
 
 
-
-------------------------------------------------------------------------
 
 
 ## What is Audio Data?
@@ -78,17 +64,19 @@ Audio Data in the Social Sciences and in Surveys
 
 - Audio data = information represented in the form of sound waves captured in a digital format (e.g., WAV)
 
+<center>
 <figure>
 
-<img src="waveform.png" width="1300" height="250"/>
+<img src="waveform2.png"/>
 
 <figcaption>Figure 1: Waveform of an audio file (amplitude over time).</figcaption>
 
 </figure>
+</center>
 
 
 ::: fragment
-- Sources for audio data for the social sciences: Interviews, Social Media (e.g. live streams, Youtube), public speeches and debates, political talk shows and podcasts, press conferences, [recorded audio survey answers]{style="color:blue"}.
+- Sources for audio data for the social sciences: Interviews, social media (e.g. live streams, Youtube, TikTok), public speeches and debates, political talk shows and podcasts, press conferences, [recorded survey answers]{style="color:blue"}.
 :::
 
 
@@ -103,17 +91,20 @@ Audio Data in the Social Sciences and in Surveys
 Audio Data in the Social Sciences and in Surveys
 :::
 
+<br><br>
+
 <font size = "6">
 
 - Audio Data contains rich information including paralinguistic elements
 	- e.g., pitch, volume, laughter and sighs, tone of voice, pause and silence, emotional cues
+<br><br>
 
 ::: fragment
-Cognitive Processing Modes:
+
 	
-- "System 1" versus "System 2" language [(Lütters et al. 2018)]{style="color:blue"}
-	- System 1: Intuitive, Automatic, and Fast Thinking → Spoken language
-	- System 2: Analytical, Deliberate, and Slow Thinking → Written language
+- "System 1" versus "System 2" language/answers [(Lütters et al. 2018)]{style="color:blue"}
+	- System 1: intuitive, automatic, and fast thinking → spoken answers
+	- System 2: analytical, deliberate, and slow thinking → written answers
 :::
 
 </font size>
@@ -135,7 +126,7 @@ Explanations:
 
 - [Gavras et al. 2022]{style="color:blue"}: Audio formats facilitate the answer process by enabling open narration, intuitive and spontaneous answers (≠ intentional and conscious text answers).
 
-- [Revilla et al. 2020]{style="color:blue"}: Speaking requires less effort than typing and voice formats make survey answering easier and quicker.
+- [Revilla et al. 2020]{style="color:blue"}: Speaking requires less effort than typing and voice formats make survey answering easier/quicker (barriers!).
 :::
 
 ::: fragment
@@ -158,16 +149,13 @@ Audio Data in the Social Sciences and in Surveys
 
 <font size = "6">
 
-- Increasing number of methods to analyze audio data
-
-- Intersection of Computer Science, Computational Linguistics and Computational Social Science
+- Increasing number of methods to analyze audio data (Computer Science, Computational Linguistics, Computational Social Science)
 	
 ::: fragment
 - Examples of Methods:
-
-	- Automatic Speech Recognition ("speech-to-text")
-		
 	- Natural Language Processing
+
+	- Automatic Speech Recognition ("speech-to-text") (Landesvatter et al. 2023)
 		
 	- Speaker Diarization / Speaker Identification
 	
@@ -179,11 +167,35 @@ Audio Data in the Social Sciences and in Surveys
 </font size>
 
 
-------------------------------------------------------------------------
 
 ## <font size = "14">Emotion Analysis</font size> {.center}
 
-------------------------------------------------------------------------
+::: header
+Emotion Analysis
+:::
+
+## Sentiment Analysis = Emotion Recognition?
+
+::: header
+Emotion Analysis
+:::
+
+<font size = "6">
+
+- [Affect]{style="color:blue"} = "an umbrella term that is used to refer to both emotions and moods" (Lee, Dirks, and Campagna 2023, 549)
+
+
+- [Sentiment]{style="color:blue"}: the valence of a feeling (e.g., positive versus negative)
+
+<blockquote>The concept of emotions is not always clearly distinguished from similar phenomena such as mood, affect, and feeling. (Gabriel et al. 2023, 39)</blockquote>
+
+- [Emotions]{style="color:blue"}: more complex and multi-dimensional state of feeling characterized by their intensity driven by different cognitive evaluations (e.g., anger towards politicians) 
+
+
+
+</font size>
+
+
 
 ## Speech Emotion Recognition
 
@@ -193,119 +205,122 @@ Emotion Analysis
 
 <font size = "6">
 
-- Why use Speech for Emotion Analysis? → Recognizing emotions from text is difficult because it is stripped of all paralinguistic and acoustic features
+- Why use speech (audio data) for Emotion Analysis?
+	- → Recognizing emotions from text is difficult because it is stripped of all paralinguistic and acoustic features
 
 ::: fragment
-- Speech Emotion Recognition (SER) is part of the field of Automated Emotion Recognition, further intersecting with disciplines such as Neurocomputing and Affective Computing 
+- **Speech Emotion Recognition (SER)** is part of the field of Automated Emotion Recognition (intersect with disciplines such as Neurocomputing, Affective Computing) 
 :::
 
 ::: fragment
-- Evolution of Models from traditional Machine Learning models (e.g., logistic regression) to deep learning based methods, e.g. SpeechBrain (Ravanelli et al. 2021)
+- Evolution of Models from traditional Machine Learning models (e.g., logistic regression) to methods based on deep learning/neural networks, e.g. SpeechBrain (Ravanelli et al. 2021)
 :::
 
 </font size>
 
 
-------------------------------------------------------------------------
-
-## Emotion Recognition = Sentiment Analysis?
-
-::: header
-Emotion Analysis
-:::
-
-<font size = "6">
-
-<blockquote>The concept of emotions is not always clearly distinguished from similar phenomena such as mood, affect, and feeling. (Gabriel et al. 2023, 39)</blockquote>
 
 
-::: fragment
-- [Sentiment]{style="color:blue"}: the valence of a feeling (e.g., positive versus negative)
 
-- [Emotions]{style="color:blue"}: a more complex and multi-dimensional state of feeling further characterized by their intensity as well as their cognitive evaluations (e.g., other-person control for anger) 
-
-- [Affect]{style="color:blue"} = "an umbrella term that is used to refer to both emotions and moods" (Lee, Dirks, and Campagna 2023, 549)
-:::
-
-</font size>
-
-
-------------------------------------------------------------------------
-
-## <font size = "14"> Research Project:<br>Emotions in Political Trust </font size> {background-image="paper3/dreamstudio-emotion-analysis.png" background-size="40%" background-opacity="0.2" .center}
+## <font size = "14">**Paper**: Affect and Emotions in Political Trust</font size> {.center}
 
 	
 	
 	
-------------------------------------------------------------------------
 
-## Background
+
+## Research Question and Motivation (1)
 
 ::: header
-Emotions in Political Trust
+Affect and Emotions in Political Trust
 :::
 
 <font size = "6">
 
-- Conventional notion of political trust where trust judgments are made upon the basis of risk calculations and rational choice-making processes
+
+
+* **Research question**: *Do sentiment & emotions impact political trust judgments?*
+
+
+<br><br>
 
 ::: fragment
-- Recently challenged by the idea of an "affect-based" form of political trust (e.g., Theiss-Morse and Barton 2017)
 
-<blockquote>"A decision to trust a government organization may […] not always be
-conscious and/or rational.” (Grimmelikhuijsen 2012, 57)</blockquote>
+1. **Substantive debate**: Rational reasoning vs. affective states
+	- Lahno (2020): Game-theory &rarr; rational choice assumptions & risk calculations & social trust
+	- "affect-based" form of political trust (e.g., Theiss-Morse and Barton 2017)
+<br><br>
 
-- “Automatic Hot Cognition” (Lodge and Taber 2013)
+
+
+:::
+
+</font size>
+
+## Research Question and Motivation (2)
+
+<font size = "6">
+
+<br><br>
+
+2. **Today's relevance of emotions**
+	- Changing media environment &rarr; emotions (fear, anger/rage) used to influence people (and their trust), e.g., by providing emotionally arousing content such as immgrants' crime (Gabriel et al. 2023)
+<br><br>
+
+
+::: fragment
+3. **Methodological**:
+	- Extend regression-based analysis through open-ended probing data
+	- Explore audio (and text) data to measure emotions & their influence on political trust
+
+
+
 :::
 
 </font size>
 
 
-------------------------------------------------------------------------
+## Theory and hypotheses
+- *"A decision to trust a government organization may […] not always be conscious and/or rational.” (Grimmelikhuijsen 2012, 57)*
+- "**Automatic Hot Cognition**" (Lodge and Taber 2013): all sociopolitical concepts that have been evaluated in the past are affectively charged &rarr; affective charge is automatically activated within milliseconds on mere exposure to the concept
+<br><br>
 
-## Research Questions and Motivation
-
-::: header
-Emotions in Political Trust
-:::
-
-<font size = "6">
-
-<blockquote>[What thought processes and associations come to respondents' minds when prompted to discuss 'politics' and their level of trust?]{style="color:black"}</blockquote>
-
-::: fragment
-<blockquote>[Are individual trust judgments in surveys driven by affective  components?]{style="color:black"}</blockquote>
-:::
-
-::: fragment
-Motivation:
-
-1. Research on determinants of political trust generates knowledge on [how trust evolves and changes over time]{style="color:blue"}.
-
-2. The influence of emotions on political trust is crucial in order to [understand how the media such as television uses emotions as an instrument for influencing people]{style="color:blue"}, for example by showing politicians’s emotional appearances in the media (Gabriel et al. 2023)
-:::
-
-</font size>
+- **H1:** Open-ended survey answers to the question about the reasons for respondents’ trust include both non-neutral sentiment **(H1a)** as well as emotional, i.e., non-neutral language **(H1b)**
+- **H2:** The sentiment or emotion expressed in an open-ended survey answer is correlated with the closed-ended trust score
+	- Positive (negative) sentiment has a positive (negative) effect on political trust **(H2a)**
+	- Emotion of happiness (anger/sadness) has a positive (negative) effect on political trust **(H2b)**
 
 
-------------------------------------------------------------------------
+<!-- the “hot cognition” hypothesis, which posits that all sociopolitical concepts that have been evaluated in the past are affectively charged and that this affective charge is automatically activated within milliseconds on mere exposure to the concept, appreciably faster than conscious appraisal of the object. 
+
+guided by automaticity in which the retrieval
+and processing of information is guided by affect. The authors also call such judgements
+“snap judgments” (Lodge and Taber 2013, 10). The term “hot cognition” refers to the
+idea that concepts (e.g. an idea, a group, a political entity) are instantly and without
+intentional control classified as either good or bad (Lodge and Taber 2013, 44), based
+on the integration of thoughts and feelings associated with one’s conscious and unconscious
+assessments. The valence of concepts is thus retrieved from an associated affect,
+allowing the brain “to use affect as real-time information to promote quick, efficient,
+spontaneous responses” (Lodge and Taber 2013, 48).
+
+-->
 
 ## Questionnaire Design
 
 ::: header
-Emotions in Political Trust
+Affect and Emotions in Political Trust
 :::
 
 <table style="width: 899px;">
 <tbody>
 <tr style="height: 63.5px;">
 <td style="width: 165.875px; height: 63.5px;">Political Trust Question</td>
-<td style="width: 515.125px; height: 63.5px;">&ldquo;How often can you trust the federal government in Washington to do what is right?&rdquo;</td>
-<td style="width: 515.125px; height: 63.5px;">closed-ended, 4 categories (Always; Most of the time; About half of the time; Never; Don’t Know</td>
+<td style="width: 515.125px; height: 63.5px;">&ldquo;How often can you trust the federal government in Washington to do what is right?&rdquo; (**ANES**)</td>
+<td style="width: 515.125px; height: 63.5px;">5 closed-ended categories [Never (0); Some of the time (1); About half of the time (2); Most of the time (3); Always (4)]</td>
 </tr>
 <tr style="height: 143px;">
 <td style="width: 165.875px; height: 143px;">Probing Question&nbsp;</td>
-<td style="width: 515.125px; height: 143px;">"The previous question was: &lsquo;How often can you trust the federal government in&nbsp;Washington to do what is right?&rsquo;.<br>Your answer was: &lsquo;About half of the time&rsquo;.<br>In your own words, please explain why you selected this answer.&rdquo;</td>
+<td style="width: 515.125px; height: 143px;">"The previous question was: &lsquo;How often can you trust the federal government in&nbsp;Washington to do what is right?&rsquo;.<br>Your answer was: &lsquo;*About half of the time*&rsquo;.<br>In your own words, please explain why you selected this answer.&rdquo;</td>
 <td style="width: 515.125px; height: 143px;">open-ended, audio request, SVoice tool (Höhne, Gavras and Qureshi 2021)</td>
 </tr>
 </tbody>
@@ -314,17 +329,17 @@ Emotions in Political Trust
 
 ------------------------------------------------------------------------
 
-## Data
+## Data: Overview
 
 ::: header
-Emotions in Political Trust
+Affect and Emotions in Political Trust
 :::
 
 <font size = "6">
 
-- Self-administered web survey, September 6 to October 27, 2023
+- Self-administered web survey (prolific), September 6 to October 27, 2023
 
-- U.S. non-probability sample; $n$=1,474 with 491 audio open answers
+- U.S. non-probability sample; $n$=1,474 with 491 open-ended audio answers (33% response rate)
     
 - quota-based (U.S. Census Bureau 2015) with challenges in obtaining sufficient participants in the oldest age category (58+)
 
@@ -333,10 +348,14 @@ Emotions in Political Trust
     
 ------------------------------------------------------------------------
 
+
+
+
+
 ## Methods
 
 ::: header
-Emotions in Political Trust
+Affect and Emotions in Political Trust
 :::
 
 <div style="text-align: center;">
@@ -352,15 +371,56 @@ Emotions in Political Trust
 
 ------------------------------------------------------------------------
 
-## Results: Sentiment
+
+## Data: Example
+```{r}
+library(knitr)
+library(tidyverse)
+library(kableExtra)
+data <- read_csv("data_presentation.csv")
+data <- data %>%
+	group_by(speechbrain_classification,
+					 sentiment_GPT) %>% 
+	arrange(speechbrain_classification,
+					 sentiment_GPT) %>%
+	mutate(trust_in_government = trust_in_government - 2) %>% # 4 = Always; Never = 0
+	# mutate(trust_in_government = ifelse(trust_in_government==5, NA, trust_in_government)) %>%	
+	slice(2) %>%
+	ungroup() %>%
+	slice(1 ,2, 6, 7, 9, 10, 11)
+
+#write_csv(data, "data_presentation_selected.csv")
+
+read_csv("data_presentation_selected.csv") %>%
+	mutate(speechbrain_classification = recode(speechbrain_classification,
+		   "['ang']" = "Anger",
+		   "['neu']" = "Neutral",
+		   "['sad']" = "Sadness",
+		   "['hap']" = "Happiness")) %>%
+	rename("Political trust (0-4)" = trust_in_government,
+				 "Probing question" = transcription,
+				 "Emotion (Speechbrain)" = speechbrain_classification,
+				 "Sentiment (BERT)" = sentiment_BERT,
+				 "Sentiment (GPT)" = sentiment_GPT) %>% 
+	slice(1:8) %>%
+  kable(format = "html", table.attr = "style='width:100%;'") %>%
+  kable_styling(font_size = 18) %>%
+	column_spec(1, width = "8em", background = "yellow")  %>%
+  column_spec(2, width = "60em", background = "yellow")
+
+```
+
+
+
+## Results: Sentiment distribution (H1a, text data)
 
 ::: header
-Emotions in Political Trust
+Affect and Emotions in Political Trust
 :::
 
 <font size = "6">
 
-- The commonly used trust in government question used in many surveys produces predominantly negative associations and thought processes.
+- The commonly used trust in government question used in many surveys produces predominantly negative associations.
 
 ::: {style="text-align: center;"}
 <figure>
@@ -376,15 +436,16 @@ Emotions in Political Trust
 
 ------------------------------------------------------------------------
 
-## Results: Sentiment
+## Results: Sentiment & political trust (H2a, text data)
 
 ::: header
-Emotions in Political Trust
+Affect and Emotions in Political Trust
 :::
 
 <font size = "6">
 
-- Associations and thought processes with a positive sentiment positively influence trust scores, and vice versa → Associations with the question wording and thought processes matter.
+- Associations with a positive sentiment positively influence trust scores, and vice versa
+	- → Associations with the question wording and thought processes matter.
 
 ::: {style="text-align: center;"}
 <figure>
@@ -400,10 +461,10 @@ Emotions in Political Trust
 
 ------------------------------------------------------------------------
 
-## Results: Emotions
+## Results: Emotions distribution (H1b, audio data)
 
 ::: header
-Emotions in Political Trust
+Affect and Emotions in Political Trust
 :::
 
 <font size = "6">
@@ -424,10 +485,10 @@ Emotions in Political Trust
 
 ------------------------------------------------------------------------
 
-## Results: Emotions
+## Results: Emotions & political trust (H2b, audio data)
 
 ::: header
-Emotions in Political Trust
+Affect and Emotions in Political Trust
 :::
 
 <font size = "6">
@@ -451,28 +512,30 @@ Emotions in Political Trust
 
 ------------------------------------------------------------------------
 
-## Discussion
+## Conclusion and discussion
 
 ::: header
-Emotions in Political Trust
+Affect and Emotions in Political Trust
 :::
 
 <font size = "6">
 
-- We find that individual's associations, thought processes and feelings influence how much they report to have trust in politics.
-
-- But we find few respondents to use emotional language in their answers and there is no consistent effect of emotions on reported trust score.
+- Sentiment is related to trust judgments, but no consistent effect of emotions (only happiness)
+- NLP/AI introduces new opportunities for measurement
 
 ::: fragment
-Two follow-up questions:
+Limitations and follow-up questions:
 
-- Maybe a survey setting is a too formal setting top elicit emotions? 
-	- Could depend on circumstances, e.g. are others around?
+- Other probing wordings; Small response rates (33%); Discrete emotions; Combine text & audio/sound; 
 :::
-
+::: fragment
+- Survey setting not emotion enough? What is the setting?
+:::
 ::: fragment
 - How does SpeechBrain classify? Can we generate a human benchmark?
 :::
+
+
 
 <!-- speechbrain has not been used in social science research so far and we need more applications with other survey datasets -->
 
@@ -493,7 +556,7 @@ Outlook
 
 <font size = "6">
 
-- Overall, audio data plays a crucial role for studying societies, as spoken language is one of humanity's most important means of communication, expression and information exchange in various fields (e.g., public speeches and debates, political talk shows and podcasts, press conferences).
+- Audio data plays a crucial role for studying societies, as spoken language is one of humanity's most important means of communication, expression and information exchange in various fields (e.g., public speeches and debates, political talk shows and podcasts, press conferences).
 
 - → We need more applied research to gain more experiences with this type of data.
 
