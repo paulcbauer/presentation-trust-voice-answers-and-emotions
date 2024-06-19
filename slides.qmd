@@ -1,8 +1,8 @@
 ---
 title: "Affect and Emotions<br>in Political Trust"
-subtitle: '<h3>Vortragsreihe "Politik in Europa", 18 June 2024</h3><br><br>'
+subtitle: '<h3>Vortragsreihe "Politik in Europa", 18 June 2024<br>Universität des Saarlandes</h3><br><br>'
 author:
-  - name: Dr. Camille Landesvatter
+  - name: Camille Landesvatter
     affiliations:
       - name: University of Mannheim
   - name: Dr. Paul C. Bauer
@@ -35,12 +35,11 @@ filters:
 ## Today's Agenda
 
 <font size = "6">
+<br>
 
-- 1. [**Audio Data in the Social Sciences and in Surveys**]{style="color:blue"}: What insights can we gain by leveraging spoken (audio) responses in surveys?
-
-- 2. [**Emotion Analysis**]{style="color:blue"}: What insights can we gain through automated emotion analysis of audio responses?
-
-- 3. [**Paper**]{style="color:blue"}: Affect and Emotions in Political Trust
+1. [**Audio Data in the Social Sciences and in Surveys**]{style="color:blue"}
+2. [**Emotion Analysis**]{style="color:blue"}
+3. [**Working Paper**]{style="color:blue"}: Affect and Emotions in Political Trust
 
 
 
@@ -85,7 +84,7 @@ Audio Data in the Social Sciences and in Surveys
 
 ------------------------------------------------------------------------
 
-## What are characteristics of Audio Data?
+## Characteristics of Audio Data & Answers
 
 ::: header
 Audio Data in the Social Sciences and in Surveys
@@ -124,13 +123,13 @@ Audio Data in the Social Sciences and in Surveys
 ::: fragment
 Explanations:
 
-- [Gavras et al. 2022]{style="color:blue"}: Audio formats facilitate the answer process by enabling open narration, intuitive and spontaneous answers (≠ intentional and conscious text answers).
+- [Gavras et al. 2022]{style="color:blue"}: Audio formats facilitate answer process by enabling **open narration, intuitive and spontaneous answers** (≠ intentional and conscious text answers).
 
-- [Revilla et al. 2020]{style="color:blue"}: Speaking requires less effort than typing and voice formats make survey answering easier/quicker (barriers!).
+- [Revilla et al. 2020]{style="color:blue"}: Speaking requires **less effort** than typing and voice formats make survey answering **easier/quicker** (lower barriers!).
 :::
 
 ::: fragment
-- Unfortunately, spoken answers compared to written answers increase response times and non-response rates [(Revilla et al. 2020, Lütters et al. 2018)]{style="color:blue"}
+- But increase response times and non-response rates [(Revilla et al. 2020, Lütters et al. 2018)]{style="color:blue"}
 :::
 
 </font size>
@@ -149,7 +148,7 @@ Audio Data in the Social Sciences and in Surveys
 
 <font size = "6">
 
-- Increasing number of methods to analyze audio data (Computer Science, Computational Linguistics, Computational Social Science)
+- Increasing number of methods to analyze audio data (interdisciplinary effort)
 	
 ::: fragment
 - Examples of Methods:
@@ -209,11 +208,11 @@ Emotion Analysis
 	- → Recognizing emotions from text is difficult because it is stripped of all paralinguistic and acoustic features
 
 ::: fragment
-- **Speech Emotion Recognition (SER)** is part of the field of Automated Emotion Recognition (intersect with disciplines such as Neurocomputing, Affective Computing) 
+- **Speech Emotion Recognition (SER)** is part of the field of Automated Emotion Recognition (intersects with Neurocomputing, Affective Computing) 
 :::
 
 ::: fragment
-- Evolution of Models from traditional Machine Learning models (e.g., logistic regression) to methods based on deep learning/neural networks, e.g. SpeechBrain (Ravanelli et al. 2021)
+- Evolution from traditional Machine Learning models (e.g., logistic regression) to methods based on deep learning/neural networks, e.g. SpeechBrain (Ravanelli et al. 2021)
 :::
 
 </font size>
@@ -247,7 +246,7 @@ Affect and Emotions in Political Trust
 ::: fragment
 
 1. **Substantive debate**: Rational reasoning vs. affective states
-	- Lahno (2020): Game-theory &rarr; rational choice assumptions & risk calculations & social trust
+	- Lahno (2020): Game-theory & rational choice
 	- "affect-based" form of political trust (e.g., Theiss-Morse and Barton 2017)
 <br><br>
 
@@ -264,9 +263,11 @@ Affect and Emotions in Political Trust
 <br><br>
 
 2. **Today's relevance of emotions**
-	- Changing media environment &rarr; emotions (fear, anger/rage) used to influence people (and their trust), e.g., by providing emotionally arousing content such as immgrants' crime (Gabriel et al. 2023)
+	- Changing media environment (e.g., TikTok) &rarr; emotions (fear, anger/rage) used to influence people and their political trust
+	- Affective polarization
 <br><br>
 
+<!-- , e.g., by providing emotionally arousing content such as immgrants' crime (Gabriel et al. 2023) -->
 
 ::: fragment
 3. **Methodological**:
@@ -281,12 +282,12 @@ Affect and Emotions in Political Trust
 
 
 ## Theory and hypotheses
-- *"A decision to trust a government organization may […] not always be conscious and/or rational.” (Grimmelikhuijsen 2012, 57)*
-- "**Automatic Hot Cognition**" (Lodge and Taber 2013): all sociopolitical concepts that have been evaluated in the past are affectively charged &rarr; affective charge is automatically activated within milliseconds on mere exposure to the concept
+- "**Automatic Hot Cognition**" (Lodge and Taber 2013): all sociopolitical concepts that have been evaluated in the past are affectively charged 
+	- &rarr; affective charge is automatically activated within milliseconds on mere exposure to the concept
 <br><br>
 
-- **H1:** Open-ended survey answers to the question about the reasons for respondents’ trust include both non-neutral sentiment **(H1a)** as well as emotional, i.e., non-neutral language **(H1b)**
-- **H2:** The sentiment or emotion expressed in an open-ended survey answer is correlated with the closed-ended trust score
+- Open-ended survey answers on reasons for respondents’ trust include both non-neutral sentiment **(H1a)** as well as emotional, i.e., non-neutral language **(H1b)**
+- The sentiment or emotion expressed in open-ended survey answers is correlated with the closed-ended trust score
 	- Positive (negative) sentiment has a positive (negative) effect on political trust **(H2a)**
 	- Emotion of happiness (anger/sadness) has a positive (negative) effect on political trust **(H2b)**
 
@@ -403,8 +404,9 @@ read_csv("data_presentation_selected.csv") %>%
 				 "Sentiment (BERT)" = sentiment_BERT,
 				 "Sentiment (GPT)" = sentiment_GPT) %>% 
 	slice(1:8) %>%
+  slice(-2, -4, -7) %>%
   kable(format = "html", table.attr = "style='width:100%;'") %>%
-  kable_styling(font_size = 18) %>%
+  kable_styling(font_size = 24) %>%
 	column_spec(1, width = "8em", background = "yellow")  %>%
   column_spec(2, width = "60em", background = "yellow")
 
@@ -445,7 +447,7 @@ Affect and Emotions in Political Trust
 <font size = "6">
 
 - Associations with a positive sentiment positively influence trust scores, and vice versa
-	- → Associations with the question wording and thought processes matter.
+	- → Associations and their sentiment matter
 
 ::: {style="text-align: center;"}
 <figure>
@@ -469,7 +471,7 @@ Affect and Emotions in Political Trust
 
 <font size = "6">
 
-- Only 17% of the probing answers contain emotional language.
+- Only 17% of the probing answers contain emotional speech.
 
 ::: {style="text-align: center;"}
 <figure>
@@ -520,26 +522,33 @@ Affect and Emotions in Political Trust
 
 <font size = "6">
 
-- Sentiment is related to trust judgments, but no consistent effect of emotions (only happiness)
-- NLP/AI introduces new opportunities for measurement
+- Sentiment related to trust judgments, but no consistent effect of emotions (only happiness)
+- NLP & AI & New forms of data introduce new opportunities for measurement
 
 ::: fragment
-Limitations and follow-up questions:
-
-- Other probing wordings; Small response rates (33%); Discrete emotions; Combine text & audio/sound; 
+Limitations: Non-probability sample; other probing wording; small response rates (33%); discrete emotions; combine text & audio/sound; 
 :::
 ::: fragment
-- Survey setting not emotion enough? What is the setting?
+- Survey setting not "emotional" enough? What is the setting?
 :::
 ::: fragment
 - How does SpeechBrain classify? Can we generate a human benchmark?
 :::
-
+::: fragment
+- Other challenges: Privacy & reproducibility
+:::
 
 
 <!-- speechbrain has not been used in social science research so far and we need more applications with other survey datasets -->
 
 </font size>
+
+
+------------------------------------------------------------------------
+
+## <font size = "14"> Thank you for your Attention! </font size> {.center}
+
+------------------------------------------------------------------------
 
 
 ------------------------------------------------------------------------
@@ -598,11 +607,44 @@ Outlook
 </font size>
 
 
-------------------------------------------------------------------------
 
-## <font size = "14"> Thank you for your Attention! </font size> {.center}
 
-------------------------------------------------------------------------
+## Speechbrain
+- **SpeechBrain**: open-source deep learning toolkit built on PyTorch for speech and audio processing tasks
+- **Emotion detection**: 2021 pre-trained model based on wav2vec 2.0 architecture (orginally used for speech recognition)
+	- Used **Interactive Emotional Dyadic Motion Capture (IEMOCAP)** dataset for training (80% accuracy across different emotions)
+- **Interactive Emotional Dyadic Motion Capture (IEMOCAP) dataset**: ~12 hours of annotated recordings, encompassing dialogues from 10 speakers (utterances)
+	- six human evaluators assessed emotional categories of the database (three
+per utterance) (Busso et al. 2008)
+	- one of 3 most widely used SER datasets (Wang et al. 2021).
+
+
+## Speechbrain accuracy
+- Our validation ~ 40 answers (single rater)
+	- Seems to work but also difficult to identify emotions
+- Is the human ear reliable enough to recognize emotions (pitch, speed, pauses, etc.) & independently from the text?
+	- Requires training...
+
+## Sentiment accuracy
+
+
+
+<center>
+<figure>
+
+<img src="tableA1.png" width="680"/>
+
+</figure>
+</center>
+
+<center>
+<figure>
+
+<img src="tableA2.png" width="680"/>
+
+</figure>
+</center>
+
 
 ## References {data-hide-slide-number="true"}
 
